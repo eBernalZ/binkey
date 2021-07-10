@@ -1,4 +1,4 @@
-const byte inputs[] = { 2, 3, 4, 5, 6, 7, 8, 9};
+const byte inputs[] = {2, 3, 4, 5, 6, 7, 8, 9};
 const int SUBMIT = 10;
 void setup() {
   // put your setup code here, to run once:
