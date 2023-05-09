@@ -13,11 +13,10 @@ void loop() {
   int submit_state = digitalRead(SUBMIT);
   if (submit_state == 1) {
     byte data = 0;
-    for (int i = 0; i < sizeof(inputs); i++) {
+    for (int i = 0; i < 8; i++) {
         data |= (digitalRead(inputs[i]) << i);
     }
     char letter = data;
     Serial.print(letter);
-    delay(1000);
   }
 }
